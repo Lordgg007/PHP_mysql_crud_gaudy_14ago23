@@ -18,22 +18,24 @@
         <?= session_unset(); } ?>
         
         <!-- ADD TASK FORM-->
-        <div calss="card card-body"><form action="save_task.php" method="POST" enctype="multipart/form-data">
+        <div class="card card-body">
+        <form action="save_task.php" method="POST" enctype="multipart/form-data">
           <div class="form-group mb-3">
-            <input type="text" name="title" class="form control" placeholder="Task title" autofocus>
+            <input type="text" name="title" class="form-control" placeholder="Task title" autofocus>
           </div>
           <div class="form-group mb-3">
-            <textarea name="description" rows="2" class="form-control" placeholder="Task description"></textarea>
+            <textarea name="description" rows="2" class="form-control" placeholder="Task Description"></textarea>
           </div>
           <div class="form-group mb-3">
             <input type="file" name="image" class="form-control">
           </div>
-          <input type="submit" name="save_task" class="btn btn-succes btn-block w-100" value="Save Task">
+          <input type="submit" name="save_task" class="btn btn-success btn-block w-100" value="Save Task">
         </form>
       </div>
-      </div>
-      
     </div>
+  </div>
+
+
   </main>
 
 <?php
