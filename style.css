@@ -1,4 +1,7 @@
 .bi {
     font-size: 2rem;
-    margin-start:;
+}
+
+.resize-image {
+    width: 7rem;
 }
