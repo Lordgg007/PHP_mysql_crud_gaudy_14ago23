@@ -21,7 +21,7 @@
     }
 
     $_SESSION['message'] = 'Task Saved Successfully';
-    $_SESSION['message_type'] = 'succes';
+    $_SESSION['message_type'] = 'success';
     header('Location: index.php');
 
   }

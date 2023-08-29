@@ -10,12 +10,12 @@
     <div class="row">
       <div class="col-md-4">
         <!--MESSAGES-->
-        <?php if(isset($_SESSION['messages'])) {?>
-        <div class="alert alert-?>= $_SESSION['message_type']?= alert-dimissible fade show" role="alert">
-          <?= $_SESSION['message'] ?>
+        <?php if(isset($_SESSION['message'])) { ?>
+        <div class="alert alert-<?= $_SESSION['message_type']?> alert-dismissible fade show" role="alert">
+          <?= $_SESSION['message']?>
           <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
-        <?= session_unset(); } ?>
+        <?php session_unset(); } ?>
         
         <!-- ADD TASK FORM-->
         <div class="card card-body">
